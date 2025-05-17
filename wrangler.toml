@@ -1,5 +1,5 @@
-name = "web3luck"
-compatibility_date = "2025-04-13"
+name = "web3luckforzora"
+compatibility_date = "2025-05-17"
 assets = { directory = "." }
 
 [vars]
