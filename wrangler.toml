@@ -1,0 +1,6 @@
+name = "web3luck"
+compatibility_date = "2025-04-13"
+assets = { directory = "." }
+
+[vars]
+BITQUERY_TOKEN = "ory_at_w4ksZ0eLAzBvJCPUR2bjIwFysVq0K5dZxqKu1Dyv_yY.Y0774pG6CVbdtxEmhjEeI5WBtcMyNGDNqY_1S01oB9E"

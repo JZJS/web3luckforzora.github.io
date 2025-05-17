@@ -1,0 +1,1537 @@
+/*--------------------------------------------------------------------- File Name: responsive.css ---------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
+
+@import url("https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,400,600,700,900&display=swap");
+
+/*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
+ 2) font-family: 'Poppins', sans-serif;
+ ----------------------------------------*****/
+
+/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
+
+@import url(animate.min.css);
+@import url(normalize.css);
+@import url(meanmenu.css);
+@import url(owl.carousel.min.css);
+@import url(slick.css);
+@import url(jquery-ui.css);
+@import url(nice-select.css);
+
+/*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
+
+* {
+  box-sizing: border-box !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #666666;
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.80857;
+  font-weight: normal;
+}
+
+a {
+  color: #1f1f1f;
+  text-decoration: none !important;
+  outline: none !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 0;
+  font-weight: normal;
+  position: relative;
+  padding: 0 0 10px 0;
+  line-height: normal;
+  color: #111111;
+  margin: 0;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 13px;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: #212121;
+  text-decoration: none !important;
+  opacity: 1;
+}
+
+button:focus {
+  outline: none;
+}
+
+ul,
+li,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+a {
+  color: #222222;
+  text-decoration: none;
+  outline: none !important;
+}
+
+a,
+.btn {
+  text-decoration: none !important;
+  outline: none !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+:focus {
+  outline: 0;
+}
+
+.btn-custom {
+  margin-top: 20px;
+  background-color: transparent !important;
+  border: 2px solid #ddd;
+  padding: 12px 40px;
+  font-size: 16px;
+}
+
+.lead {
+  font-size: 18px;
+  line-height: 30px;
+  color: #767676;
+  margin: 0;
+  padding: 0;
+}
+
+.form-control:focus {
+  border-color: #ffffff !important;
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+}
+
+.navbar-form input {
+  border: none !important;
+}
+
+.badge {
+  font-weight: 500;
+}
+
+blockquote {
+  margin: 20px 0 20px;
+  padding: 30px;
+}
+
+button {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.full {
+  float: left;
+  width: 100%;
+}
+
+.layout_padding {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.layout_padding_2 {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.light_silver {
+  background: #f9f9f9;
+}
+
+.theme_bg {
+  background: #38c8a8;
+}
+
+.margin_top_30 {
+  margin-top: 30px !important;
+}
+
+.full {
+  width: 100%;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+/**-- heading section --**/
+
+/*---------------------------- preloader area ----------------------------*/
+
+.loader_bg {
+  position: fixed;
+  z-index: 9999999;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.loader {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader img {
+  width: 64px;
+}
+
+/*-- navigation--*/
+
+.navigation.navbar {
+  float: right;
+  padding: 0;
+}
+
+.navigation.navbar-dark .navbar-nav .nav-link {
+  padding: 0 25px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.navigation.navbar-dark .navbar-nav .nav-link:focus,
+.navigation.navbar-dark .navbar-nav .nav-link:hover {
+  color: #000;
+}
+
+.navigation.navbar-dark .navbar-nav .active > .nav-link,
+.navigation.navbar-dark .navbar-nav .nav-link.active,
+.navigation.navbar-dark .navbar-nav .nav-link.show,
+.navigation.navbar-dark .navbar-nav .show > .nav-link {
+  color: #bb4f42;
+}
+
+.navbar-expand-md .navbar-nav {
+  padding-right: 10px;
+}
+
+.sign_btn {
+  padding-left: 50px;
+}
+
+.sign_btn a {
+  background-color: #fff;
+  display: inline-block;
+  padding: 6px 35px;
+  border-radius: 25px;
+  color: #292e39;
+  font-size: 17px;
+}
+
+.sign_btn a:hover {
+  color: #fff;
+  background: #eec237;
+}
+
+/*-- header area --*/
+
+/*--------------------------------------------------------------------- top banner area ---------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------- layout new css ---------------------------------------------------------------------*/
+
+.header {
+  width: 100%;
+  background: transparent;
+  padding: 20px 30px;
+  position: absolute;
+}
+
+.logo a {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 40px;
+}
+
+/** banner section **/
+
+.banner_main {
+  background: url(../images/banner.jpg) no-repeat;
+  min-height: 700px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-size: 100% 100%;
+}
+
+.text-bg {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.text-bg h1 {
+  color: #fff;
+  font-size: 50px;
+  line-height: 50px;
+  padding-bottom: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.text-bg span {
+  color: #fff;
+  font-size: 45px;
+  line-height: 50px;
+  font-weight: bold;
+  padding-bottom: 20px;
+  display: block;
+}
+
+.text-bg p {
+  color: #fff;
+  font-size: 17px;
+  line-height: 28px;
+  padding-bottom: 60px;
+}
+
+.text-bg a {
+  font-size: 17px;
+  background-color: #fff;
+  color: #000;
+  font-weight: 500;
+  padding: 13px 0;
+  width: 100%;
+  max-width: 190px;
+  text-align: center;
+  display: inline-block;
+  transition: ease-in all 0.5s;
+  border-radius: 10px;
+}
+
+.text-bg a:hover {
+  background-color: #eec237;
+  color: #fff;
+  transition: ease-in all 0.5s;
+  border-radius: 25px;
+}
+
+.titlepage {
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.titlepage h2 {
+  font-size: 55px;
+  color: #313131;
+  line-height: 60px;
+  font-weight: bold;
+  padding: 0;
+}
+
+.d_flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/** banner section **/
+
+.form_book {
+  background: #fff;
+  margin-top: -104px;
+  padding: 30px 8px 0 60px;
+  border-radius: 40px 40px 0 0;
+}
+
+.form_book .date {
+  color: #7e7e7e;
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding-left: 17px;
+}
+
+.form_book .row {
+  display: flex;
+  justify-content: center; /* 让输入框和按钮水平居中 */
+  align-items: center; /* 确保它们在同一行 */
+  gap: 40px; /* 让输入框和按钮之间保持间距 */
+  flex-wrap: wrap; /* 让小屏幕时内容自动换行 */
+}
+
+.book_n {
+  border: inherit;
+  border-radius: 20px;
+  background-color: #eeeeee;
+  width: 100%;
+  font-size: 16px;
+  height: auto;
+  line-height: normal;
+  padding: 10px 20px;
+  -webkit-appearance: none !important;
+}
+
+.required {
+  color: red;
+  font-weight: bold;
+  vertical-align: middle; /* 保持和文字对齐 */
+  margin-left: 5px;
+}
+
+.book_btn1 {
+  display: flex; /* 使用 Flexbox 让文字完全居中 */
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  width: 70%;
+  height: 50px; /* 确保按钮有固定高度 */
+  padding: 0; /* 移除 padding 以防止影响居中 */
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #a65ee9;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  text-align: center; /* 备用，确保文本居中 */
+}
+
+.book_btn1:hover {
+  background-color: #eec237;
+  color: #fff;
+  transition: ease-in all 0.5s;
+  border-radius: 25px;
+}
+
+.book_btn {
+  font-size: 17px;
+  background-color: #000;
+  color: #fff;
+  font-weight: 500;
+  padding: 5px 0;
+  width: 100%;
+  max-width: 161px;
+  text-align: center;
+  display: inline-block;
+  transition: ease-in all 0.5s;
+  border-radius: 10px;
+  margin-top: 33px;
+}
+
+.book_btn:hover {
+  background-color: #eec237;
+  color: #fff;
+  transition: ease-in all 0.5s;
+  border-radius: 25px;
+}
+
+/* 确保整个区域仍然竖排 */
+.vertical-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* 让两行输入框有间距 */
+}
+
+/* 让整个区域仍然竖排，但内部两项水平排列 */
+.vertical-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* 让两个输入框组之间有间距 */
+}
+
+/* 让 label 和 input 在一行内 */
+.input-row {
+  display: flex;
+  align-items: center; /* 让 label 和 input 在同一水平线上 */
+  gap: 10px; /* label 和输入框之间的间距 */
+}
+
+/* 设置 label 固定宽度，防止换行 */
+.nickname-label,
+.tokenname-label {
+  width: 150px; /* 可根据需要调整 */
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap; /* 防止自动换行 */
+  display: flex;
+  align-items: center;
+}
+
+/* 让输入框适应宽度 */
+.nickname-input,
+.tokenname-input {
+  flex: 0 0 180px; /* 让输入框占满剩余空间 */
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 250px; /* 限制最大宽度，防止过长 */
+}
+
+/** banner section **/
+
+/** Choose  section **/
+.radio-label {
+  display: block; /* 让选项占满整行，左对齐 */
+  text-align: left;
+  margin-bottom: 10px; /* 让选项之间保持间距 */
+}
+
+.question_section {
+  padding-top: 140px;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.question_box {
+  display: none; /* 默认隐藏所有问题 */
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.question_box.active {
+  display: block; /* 让当前的问题显示 */
+}
+
+.question_controls {
+  margin-top: 15px;
+}
+
+.pagination_controls {
+  margin-top: 15px;
+}
+
+.page_btn {
+  padding: 6px 10px;
+  margin: 5px;
+  background-color: #ccc;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.page_btn.active {
+  background-color: #cba1f2;
+  color: white;
+}
+
+/** Choose  section **/
+
+.choose {
+  margin-top: 90px;
+}
+
+.choose_box {
+  padding-top: 76px;
+}
+
+.choose_box .titlepage {
+  text-align: left;
+  padding-bottom: 35px;
+}
+
+.text_norlam {
+  font-weight: normal;
+}
+
+.choose_box p {
+  font-size: 17px;
+  line-height: 36px;
+  color: #313131;
+  padding: 0 0 45px 0;
+}
+
+.img_box {
+  margin-bottom: 30px;
+  padding-top: 50px;
+}
+
+.img_box figure {
+  margin: 0;
+}
+
+.img_box figure img {
+  width: 100%;
+}
+
+.language-switch {
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.language-switch button {
+  background: none;
+  border: none;
+  font-size: 22px; /* 地球图标大小 */
+  cursor: pointer;
+  color: white; /* 适应深色导航栏 */
+}
+
+.language-switch .dropdown-menu {
+  min-width: 100px;
+  text-align: center;
+}
+
+.language-switch .dropdown-item {
+  font-size: 14px;
+  padding: 8px 12px;
+}
+
+.language-icon {
+  width: 24px; /* 控制图标大小 */
+  height: auto;
+  vertical-align: middle; /* 确保图标和文本对齐 */
+}
+
+.language-icon:hover {
+  transform: scale(1.1); /* 鼠标悬停时放大 */
+}
+
+#languageDropdown::after {
+  display: none !important; /* 隐藏 Bootstrap 默认的小箭头 */
+}
+
+/** end Choose section **/
+
+/** Contact us section **/
+.social-icons {
+  text-align: right; /* 让图标在 Contact us 右侧对齐 */
+}
+
+.social-icons a {
+  margin-left: 15px; /* 每个图标之间留出间距 */
+}
+
+.social-icon {
+  width: 30px; /* 适当调整图标大小 */
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2); /* 鼠标悬停时放大 */
+}
+
+/** Popup section **/
+/* comingsoon弹窗 */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+/* 弹窗内容 */
+.modal-content {
+  background: white;
+  width: 250px; /* 限制弹窗大小 */
+  height: 150px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 18px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 关闭按钮 */
+.close-btn {
+  position: absolute;
+  top: 3px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: black;
+  transform: scale(1.2); /* 鼠标悬停时放大 */
+}
+
+/* match代币弹窗 */
+/* 特定用于 matchCoinModal 的弹窗 */
+#matchCoinModal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 弹窗整体样式 */
+#matchCoinModal .modal-content {
+  width: 500px;
+  min-height: 100px;
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 17px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  gap: 20px;
+  position: relative;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 顶部代币信息 */
+#matchCoinModal .modal-top {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 30px;
+}
+
+/* 代币图片 */
+#matchCoinModal .match_coin_img_box {
+  flex: 0 0 80px; /* 增大图片框的尺寸 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#matchCoinModal .match_coin_img_box figure {
+  margin: 0;
+}
+
+#matchCoinModal .match_coin_img_box figure img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain; /* 让图片自适应 */
+  border-radius: 10px;
+}
+
+/* 代币详细信息 */
+#matchCoinModal .match_coin_details {
+  flex: 1;
+  text-align: left;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column; /* 让内容垂直排列 */
+  justify-content: center; /* 让文本居中 */
+}
+
+#matchCoinModal .match_coin_details h2 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+#matchCoinModal .match_coin_details p {
+  font-size: 16px;
+  margin: 3px 0;
+}
+
+/* 代币购买按钮 */
+#matchCoinModal .buy-btn {
+  display: block;
+  font-size: 14px;
+  color: #ffcc00;
+  text-decoration: underline;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+#matchCoinModal .buy-btn:hover {
+  color: #ffaa00;
+  text-decoration: none;
+}
+
+/* 底部按钮 */
+#matchCoinModal .modal-bottom {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  padding-top: 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+}
+
+/* 分享按钮容器 */
+#matchCoinModal .share-container {
+  position: relative;
+  display: inline-block;
+}
+
+#matchCoinModal .share-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  bottom: 40px; /* 让菜单浮在按钮上 */
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  width: 130px;
+  text-align: center;
+}
+
+#matchCoinModal .share-menu a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  color: #333;
+  text-decoration: none;
+}
+
+#matchCoinModal .share-menu a img {
+  width: 16px;
+  margin-right: 5px;
+}
+
+#matchCoinModal .share-menu a:hover {
+  background-color: #f1f1f1;
+}
+
+.book_btn2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px; /* 设定固定宽度 */
+  height: 45px; /* 设定固定高度 */
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #a65ee9;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.book_btn2:hover {
+  background-color: #eec237;
+  color: #fff;
+  border-radius: 25px;
+}
+
+/** our  section **/
+
+.our {
+  margin-top: 60px;
+}
+
+.our_box .titlepage {
+  text-align: right;
+  padding-bottom: 30px;
+}
+
+.text_norlam {
+  font-weight: normal;
+}
+
+.our_box {
+  text-align: right;
+}
+
+.our_box p {
+  font-size: 17px;
+  line-height: 36px;
+  color: #313131;
+  padding: 0 0 40px 0;
+}
+
+.our .img_box {
+  margin-bottom: 0;
+}
+
+.img_box figure {
+  margin: 0;
+}
+
+.img_box figure img {
+  width: 100%;
+}
+
+/** end our  section **/
+
+/** about section **/
+
+.about {
+  background: #353e4e;
+  margin-top: 60px;
+  padding: 60px 0;
+}
+
+.about .titlepage {
+  text-align: left;
+  padding: 0;
+}
+
+.about .titlepage h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.about .titlepage p {
+  color: #fff;
+  font-size: 17px;
+  line-height: 28px;
+  font-weight: 500;
+  padding-bottom: 30px;
+}
+
+.about_text {
+  max-width: 539px;
+  width: 100%;
+  float: right;
+}
+
+.about_img {
+  max-width: 615px;
+  width: 100%;
+  float: left;
+}
+
+.about_img figure {
+  margin: 0;
+}
+
+.about_img figure img {
+  width: 100%;
+}
+
+/** end about section **/
+
+.read_more {
+  font-size: 17px;
+  background-color: #000;
+  color: #fff;
+  padding: 13px 0;
+  width: 100%;
+  max-width: 190px;
+  text-align: center;
+  display: inline-block;
+  transition: ease-in all 0.5s;
+  border-radius: 10px;
+}
+
+.read_more:hover {
+  background: #eec237;
+  color: #fff;
+  transition: ease-in all 0.5s;
+  border-radius: 25px;
+}
+
+/** testimonial section **/
+
+.testimonial {
+  margin-top: 80px;
+  background-size: cover;
+  background: url(../images/tes_bg.jpg) no-repeat center;
+  height: 600px; /* 固定高度 */
+  padding: 50px 0; /* 适当调整内边距，避免内容被压缩 */
+  margin-bottom: -265px;
+}
+
+.testimonial .titlepage h2 {
+  color: #313131;
+}
+
+.testimonial_Carousel .carousel-caption {
+  position: inherit;
+  padding: 0;
+}
+
+.testimonial_box {
+  text-align: center;
+}
+
+.test_box {
+  padding: 30px 25px;
+  background: #d7530a;
+}
+
+.testimonial_Carousel .test_box h4 {
+  font-size: 17px;
+  color: #fff;
+  line-height: 18px;
+  display: block;
+  text-align: left;
+  float: left;
+  font-weight: 600;
+  padding: 8px 0 0;
+}
+
+.testimonial_Carousel .test_box i {
+  font-size: 17px;
+  line-height: 28px;
+  text-align: right;
+  display: block;
+}
+
+.testimonial_Carousel .test_box p {
+  font-size: 17px;
+  line-height: 28px;
+  color: #fff;
+  text-align: left;
+  padding-top: 20px;
+}
+
+.testimonial_Carousel .carousel-indicators {
+  bottom: -50px;
+}
+
+.testimonial_Carousel .carousel-indicators li {
+  width: 20px;
+  height: 20px;
+  background: #262e31;
+  border-radius: 10px;
+}
+
+.testimonial_Carousel .carousel-indicators li.active {
+  background: #d7530a;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  display: none;
+}
+
+/** end testimonial section **/
+
+/** footer **/
+
+.main_form {
+  padding: 50px 30px;
+  background: #d7530a;
+  margin-top: -260px;
+  border-radius: 25px;
+}
+
+.main_form .contactus {
+  border: inherit;
+  padding: 0 19px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  color: #292e39;
+  font-size: 18px;
+  font-weight: normal;
+  border-radius: 15px;
+}
+
+.main_form .textarea {
+  border: inherit;
+  margin-bottom: 20px;
+  width: 100%;
+  background: #fff;
+  color: #292e39;
+  font-size: 18px;
+  font-weight: normal;
+  border-radius: 15px;
+  padding: 50px 19px 0;
+}
+
+.main_form .send_btn {
+  font-size: 17px;
+  transition: ease-in all 0.5s;
+  background-color: #000;
+  color: #fff;
+  padding: 13px 0;
+  max-width: 200px;
+  width: 100%;
+  display: block;
+  margin: 30px auto 0;
+  border-radius: 10px;
+}
+
+.main_form .send_btn:hover {
+  background-color: #eec237;
+  transition: ease-in all 0.5s;
+  color: #fff;
+  border-radius: 25px;
+}
+
+#request *::placeholder {
+  color: #4d4d4f;
+  opacity: 1;
+}
+
+.multi {
+  color: #f6d601;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.color_chang {
+  color: #0c0c0e;
+}
+
+.footer {
+  margin-top: 265px;
+  background: #353e4e;
+  padding-top: 60px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.footer .titlepage {
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.footer .titlepage h2 {
+  color: #fff;
+}
+
+.cont {
+  padding-top: 20px;
+  text-align: left;
+}
+
+.cont h3 {
+  color: #fff;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: bold;
+}
+
+.cont p {
+  color: #fff;
+  font-size: 17px;
+  line-height: 28px;
+  padding-top: 20px;
+}
+
+.copyright {
+  margin-top: 90px;
+  padding: 20px 0;
+  background-color: #fff;
+}
+
+.copyright p {
+  color: #020203;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.copyright a {
+  color: #020203;
+}
+
+.copyright a:hover {
+  color: #eec237;
+}
+
+/** end footer **/
+
+#matchCoinModal .modal-content {
+  width: 500px; /* 原大小的两倍 */
+  height: 300px; /* 让高度适应内容 */
+  padding: 30px;
+  display: flex;
+  flex-direction: row; /* 让左侧放代币信息，右侧空着 */
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 左侧代币信息 */
+.match_coin_info {
+  width: 50%; /* 占据左侧一半 */
+  text-align: left; /* 让文本靠左 */
+}
+
+/* 右侧空白区域 */
+.match_coin_empty {
+  width: 50%;
+}
+
+/* 代币名称 */
+.match_coin h2 {
+  font-size: 40px;
+  color: #313131;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* 价格和变动信息 */
+.match_coin p {
+  font-size: 30px;
+  color: orange;
+  margin: 5px 0;
+}
+
+/* 代币图片 */
+.match_coin_img_box {
+  margin-bottom: 20px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: left; /* 让图片靠左 */
+}
+
+.match_coin_img_box figure img {
+  width: 60px; /* 缩小图片，使之与信息大小匹配 */
+}
+
+/* 默认隐藏加载动画 */
+#match_coin_loader {
+  display: none;
+}
+
+.match_loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.match_loader img {
+  width: 100px;
+}
+
+/* 签到区域的外部容器，让其与上方输入框对齐 */
+.sign-in-wrapper {
+  width: 60%; /* 让签到区域变窄，与上方表单对齐 */
+  margin: 50px auto 0;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* 签到标题 */
+.sign-in-title {
+  font-size: 24px; /* Slightly larger font */
+  font-weight: bold;
+  color: #5a2ea6; /* 3Luck theme color */
+  margin-bottom: 20px; /* Add spacing below */
+  text-align: center;
+}
+
+/* 签到系统的整体布局 */
+.sign-in-container {
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  border-radius: 60px;
+  padding: 30px;
+}
+
+/* 左侧日历 */
+.calendar {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.calendar table {
+  border-collapse: collapse;
+  width: 90%;
+}
+
+.calendar th,
+.calendar td {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* 已签到的日期变成标准圆形 */
+.calendar td.checked {
+  background-color: #d8b5ff;
+  border-radius: 50%; /* 变成标准圆 */
+  color: white;
+  font-weight: bold;
+  width: 35px; /* 确保宽高一致 */
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto; /* 确保在 td 内水平居中 */
+  padding: 0; /* 避免 td 额外内边距导致偏移 */
+}
+
+/* 右侧按钮 */
+.sign-in-buttons {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+}
+
+/* 让按钮的宽度保持一致，并减少间距 */
+.sign-in-buttons .book_btn1 {
+  width: 200px;
+  font-size: 14px;
+  padding: 8px;
+}
+
+/* 断开钱包确认弹窗 */
+#disconnectConfirmModal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+#disconnectConfirmModal .modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  min-height: 200px;
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+ font-size: 17px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  gap: 20px;
+  position: relative;
+  background: white;
+}
+
+#disconnectConfirmModal .modal-top {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 30px; /* 增加底部间距 */
+}
+
+#disconnectConfirmModal .match_coin_details {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px; /* 增加底部间距 */
+}
+
+#disconnectConfirmModal .match_coin_details h2 {
+  font-size: 22px;
+  margin-bottom: 15px; /* 增加标题和文字之间的间距 */
+  color: #313131;
+  font-weight: bold;
+}
+
+#disconnectConfirmModal .match_coin_details p {
+  font-size: 17px;
+  color: #666666;
+  margin: 0;
+  line-height: 28px;
+}
+
+#disconnectConfirmModal .modal-bottom {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  padding-top: 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+}
+
+/* Joinbet弹窗 */
+#joinBetModal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+#joinBetModal .modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  min-height: 200px;
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+ font-size: 17px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  gap: 20px;
+  position: relative;
+  background: white;
+}
+
+#joinBetModal .modal-top {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 30px; /* 增加底部间距 */
+}
+
+#joinBetModal .match_coin_details {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px; /* 增加底部间距 */
+}
+
+#joinBetModal .match_coin_details h2 {
+  font-size: 22px;
+  margin-bottom: 15px; /* 增加标题和文字之间的间距 */
+  color: #313131;
+  font-weight: bold;
+}
+
+#joinBetModal .match_coin_details p {
+  font-size: 17px;
+  color: #666666;
+  margin: 0;
+  line-height: 28px;
+}
+
+#joinBetModal.modal-bottom {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  padding-top: 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+}
+
+
+
+
+
+
